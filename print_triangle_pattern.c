@@ -1,6 +1,11 @@
 // { Driver Code Starts
 //Initial Template for C
-
+// s = 4
+// * 
+// * * 
+// * * * 
+// * * * * 
+	
 #include <stdio.h>
 
 
