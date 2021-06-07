@@ -12,12 +12,19 @@ bool prime(int n){
     
     //Write your code here
     //returns a boolean value 
-    for (int i=2; i<n; i++)
+    if(n>1) // 0 and 1 are prime
     {
-        if(n%i==0)
+        for (int i=2; i<n; i++)
         {
-            return false;
+            if(n%i==0)
+            {
+                return false;
+            }
         }
+    }
+    else
+    {
+        return false;
     }
     return true;
 }
