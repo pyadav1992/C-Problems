@@ -27,7 +27,7 @@ int distinct(int arr[], int n){
                 }
                 j--; 
             }
-            if(j<=0) // Did we check all the elements to the left?
+            if(j==0) // Did we check all the elements to the left?
                 count++; // Unique number found
         }
     }
