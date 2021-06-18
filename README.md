@@ -1,2 +1,2 @@
 # C-Problems
-Simple C programs for conceptual understanding 
+Repository to maintain the C-programs for learning
