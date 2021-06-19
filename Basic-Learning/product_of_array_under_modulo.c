@@ -1,3 +1,18 @@
+//Since a and b may be very large numbers, if we try to multiply directly then it will definitely overflow. Therefore we use the basic approach of multiplication i.e.,
+
+// a * b = a + a + … + a (b times)
+// So we can easily compute the value of addition (under modulo m) without any
+// overflow in the calculation. But if we try to add the value of a repeatedly up to b times then it will definitely timeout for the large value of b, since the time complexity of this approach would become O(b).
+
+// So we divide the above repeated steps of a in simpler way i.e.,
+
+// If b is even then 
+//   a * b = 2 * a * (b / 2), 
+// otherwise 
+//  a * b = a + a * (b - 1)
+
+// more information = https://tutorialspoint.dev/algorithm/mathematical-algorithms/multiply-large-integers-under-large-modulo
+
 // { Driver Code Starts
 //Initial Template for C
 
