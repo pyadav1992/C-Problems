@@ -12,8 +12,8 @@
      n = number of element in array
      mod = modulo value;
 */
-// Returns (a * b) % mod 
-long long int moduloMultiplication(long long int num1, 
+// Returns (num1 * num2) % mod 
+long long int modulo_multiplication(long long int num1, 
                                    long long int num2, 
                                    long long int mod) 
 { 
@@ -45,7 +45,7 @@ long long int product(int arr[], int n, long long int mod)
      long long int prod = 1;
      for(int i=0; i<n; i++)
      {
-         prod = moduloMultiplication(prod, arr[i], mod);
+         prod = modulo_multiplication(prod, arr[i], mod);
      }
      
      return (long long int)(prod);
